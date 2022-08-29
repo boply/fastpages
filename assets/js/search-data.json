@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Template Notebook 1",
-            "content": "Headings . Example notes Sub Notes | . | .",
+            "content": "Heading 1 . Example notes . Sub Notes | . ## Heading 2 . | Example notes . Sub Notes | . | .",
             "url": "https://boply.github.io/fastpages/jupyter/2022/08/28/Template-Notebook-1.html",
             "relUrl": "/jupyter/2022/08/28/Template-Notebook-1.html",
             "date": " • Aug 28, 2022"
