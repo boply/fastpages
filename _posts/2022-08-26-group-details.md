@@ -7,6 +7,8 @@ title: Group Details
 ---
 # Group Details
 
+*Links to all fastpages blogs.
+
 [Tigran A.](https://tigran7.github.io/fastpages/) (Partner)
 
 [Aarav A.](aaravarora01.github.io/AaravArora-APCSA-Fastpages/)
