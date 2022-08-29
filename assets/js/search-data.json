@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Fibbonacci Sequence",
-            "content": "// Hack: Nth Fibbonacci class Fibo { public static void main(String[] args) { Scanner input; input = new Scanner(System.in); System.out.print(&quot;Type in amount of numbers for sequence --&gt; &quot;); try { int N = input.nextInt(); int i1 = 0, i2 = 1; int count = 0; while (count &lt; N) { System.out.print(i1 + &quot; &quot;); int i3 = i2 + i1; i1 = i2; i2 = i3; count = count + 1; } } catch (Exception e) { System.out.println(&quot;Input must be an integer &quot; + e); } } } Fibo.main(null) . Type in amount of numbers for sequence --&gt; 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 .",
+            "content": "class Fibo { public static void main(String[] args) { Scanner input; input = new Scanner(System.in); System.out.print(&quot;Type in amount of numbers for sequence --&gt; &quot;); try { int N = input.nextInt(); int i1 = 0, i2 = 1; int count = 0; while (count &lt; N) { System.out.print(i1 + &quot; &quot;); int i3 = i2 + i1; i1 = i2; i2 = i3; count = count + 1; } } catch (Exception e) { System.out.println(&quot;Input must be an integer &quot; + e); } } } Fibo.main(null) . Type in amount of numbers for sequence --&gt; 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 .",
             "url": "https://boply.github.io/fastpages/2022/08/28/Fibbonacci-Sequence.html",
             "relUrl": "/2022/08/28/Fibbonacci-Sequence.html",
             "date": " • Aug 28, 2022"
@@ -46,10 +46,10 @@
   
     
         ,"post4": {
-            "title": "Group Details",
-            "content": "Group Details . *Links to all fastpages blogs. . Tigran A. (Partner) . Aarav A. . Vunsh M. .",
-            "url": "https://boply.github.io/fastpages/markdown/2022/08/26/group-details.html",
-            "relUrl": "/markdown/2022/08/26/group-details.html",
+            "title": "Week 1 Primitives",
+            "content": "*Links to all fastpages blogs. . Tigran A. (Partner) . Aarav A. . Vunsh M. . Each student captures information in fastpages thinking … how they are going to capture information that will grow to 10 college board units … how they will recognize something as PBL vs College Board. . I will watch video from College Board. | I will practice fastpages whenever I have the time. | I will keep key info and code in Jupyter Notebooks. |",
+            "url": "https://boply.github.io/fastpages/markdown/2022/08/26/Week-1.html",
+            "relUrl": "/markdown/2022/08/26/Week-1.html",
             "date": " • Aug 26, 2022"
         }
         
