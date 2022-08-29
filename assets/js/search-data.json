@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "Fibonacci Sequence",
-            "content": "class Fibo { public static void main(String[] args) { Scanner input; input = new Scanner(System.in); System.out.print(&quot;Type in amount of numbers for sequence --&gt; &quot;); try { int N = input.nextInt(); int i1 = 0, i2 = 1; int count = 0; while (count &lt; N) { System.out.print(i1 + &quot; &quot;); int i3 = i2 + i1; i1 = i2; i2 = i3; count = count + 1; } } catch (Exception e) { System.out.println(&quot;Input must be an integer &quot; + e); } } } Fibo.main(null) . Type in amount of numbers for sequence --&gt; 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 .",
+            "title": "Template 1",
+            "content": "Headings . -Example notes -Sub Notes .",
             "url": "https://boply.github.io/fastpages/jupyter/2022/08/28/Template-1.html",
             "relUrl": "/jupyter/2022/08/28/Template-1.html",
             "date": " • Aug 28, 2022"
