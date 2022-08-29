@@ -132,7 +132,26 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>ls
+<div class=" highlight hl-bash"><pre><span></span>python --version
+python2 --version
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+java --version
+javac --version
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+conda --version
+conda list <span class="p">|</span> grep <span class="s2">&quot;jupyter&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+jupyter --version
+jupyter kernelspec list
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+sudo apt list
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+npm -version
 </pre></div>
 
     </div>
@@ -145,10 +164,47 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2020-02-20-test.ipynb		README.md
-2022-08-22-BashNotebook.ipynb	ghtop_images
-2022-22-08-JavaNotebook.ipynb	my_icons
-2022-22-08-PythonNotebook.ipynb
+<pre>Python 3.9.12
+Python 2.7.18
+
+java 18.0.2.1 2022-08-18
+Java(TM) SE Runtime Environment (build 18.0.2.1+1-1)
+Java HotSpot(TM) 64-Bit Server VM (build 18.0.2.1+1-1, mixed mode, sharing)
+javac 18.0.2.1
+
+conda 4.14.0
+jupyter                   1.0.0            py39hecd8cb5_7  
+jupyter_client            6.1.12             pyhd3eb1b0_0  
+jupyter_console           6.4.0              pyhd3eb1b0_0  
+jupyter_core              4.9.2            py39hecd8cb5_0  
+jupyter_server            1.13.5             pyhd3eb1b0_0  
+jupyterlab                3.3.2              pyhd3eb1b0_0  
+jupyterlab_pygments       0.1.2                      py_0  
+jupyterlab_server         2.10.3             pyhd3eb1b0_1  
+jupyterlab_widgets        1.0.0              pyhd3eb1b0_1  
+
+Selected Jupyter core packages...
+IPython          : 8.2.0
+ipykernel        : 6.9.1
+ipywidgets       : 7.6.5
+jupyter_client   : 6.1.12
+jupyter_core     : 4.9.2
+jupyter_server   : 1.13.5
+jupyterlab       : 3.3.2
+nbclient         : 0.5.13
+nbconvert        : 6.4.4
+nbformat         : 5.3.0
+notebook         : 6.4.8
+qtconsole        : 5.3.0
+traitlets        : 5.1.1
+Available kernels:
+  python389jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6     /Users/boply/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/temp/jupyter/kernels/python389jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6
+  python3912jvsc74a57bd0b3b7c4b39c51acaa0ababaac78dafb28c940c1acd38600e6898f44bc93745552    /Users/boply/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/temp/jupyter/kernels/python3912jvsc74a57bd0b3b7c4b39c51acaa0ababaac78dafb28c940c1acd38600e6898f44bc93745552
+  bash                                                                                      /Users/boply/Library/Jupyter/kernels/bash
+  java                                                                                      /Users/boply/Library/Jupyter/kernels/java
+  javascript                                                                                /Users/boply/Library/Jupyter/kernels/javascript
+  python3                                                                                   /Users/boply/opt/anaconda3/share/jupyter/kernels/python3
+
 </pre>
 </div>
 </div>
