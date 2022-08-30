@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Python Notebook",
             "content": "print(&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://boply.github.io/fastpages/jupyter/week0/2022/08/29/PythonNotebook.html",
-            "relUrl": "/jupyter/week0/2022/08/29/PythonNotebook.html",
+            "url": "https://boply.github.io/fastpages/jupyter/week-0/2022/08/29/PythonNotebook.html",
+            "relUrl": "/jupyter/week-0/2022/08/29/PythonNotebook.html",
             "date": " • Aug 29, 2022"
         }
         
@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "Java Notebook",
             "content": "public class HelloWorld { public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } HelloWorld.main(null); . Hello World! .",
-            "url": "https://boply.github.io/fastpages/jupyter/week0/2022/08/29/JavaNotebook.html",
-            "relUrl": "/jupyter/week0/2022/08/29/JavaNotebook.html",
+            "url": "https://boply.github.io/fastpages/jupyter/week-0/2022/08/29/JavaNotebook.html",
+            "relUrl": "/jupyter/week-0/2022/08/29/JavaNotebook.html",
             "date": " • Aug 29, 2022"
         }
         
@@ -37,8 +37,8 @@
         ,"post3": {
             "title": "Fibonacci Sequence",
             "content": "class Fibo { public static void main(String[] args) { Scanner input; input = new Scanner(System.in); System.out.print(&quot;Type in amount of numbers for sequence --&gt; &quot;); try { int N = input.nextInt(); int x1 = 0, x2 = 1; int count = 0; while (count &lt; N) { System.out.print(x1 + &quot; &quot;); int x3 = x2 + x1; x1 = x2; x2 = x3; count = count + 1; } } catch (Exception e) { System.out.println(&quot;Input must be an integer &quot; + e); } } } Fibo.main(null) . Type in amount of numbers for sequence --&gt; 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 .",
-            "url": "https://boply.github.io/fastpages/jupyter/week1/2022/08/29/Fibonacci-Sequence.html",
-            "relUrl": "/jupyter/week1/2022/08/29/Fibonacci-Sequence.html",
+            "url": "https://boply.github.io/fastpages/jupyter/week-1/2022/08/29/Fibonacci-Sequence.html",
+            "relUrl": "/jupyter/week-1/2022/08/29/Fibonacci-Sequence.html",
             "date": " • Aug 29, 2022"
         }
         
@@ -48,8 +48,8 @@
         ,"post4": {
             "title": "Program Info",
             "content": "echo &quot;Python Version&quot; python --version python2 --version echo &quot;&quot; echo &quot;-Java Version-&quot; java --version javac --version echo &quot;&quot; echo &quot;--Anaconda Version--&quot; conda --version conda list | grep &quot;jupyter&quot; . Python Version Python 3.9.12 Python 2.7.18 -Java Version- java 18.0.2.1 2022-08-18 Java(TM) SE Runtime Environment (build 18.0.2.1+1-1) Java HotSpot(TM) 64-Bit Server VM (build 18.0.2.1+1-1, mixed mode, sharing) javac 18.0.2.1 --Anaconda Version-- conda 4.14.0 jupyter 1.0.0 py39hecd8cb5_7 jupyter_client 6.1.12 pyhd3eb1b0_0 jupyter_console 6.4.0 pyhd3eb1b0_0 jupyter_core 4.9.2 py39hecd8cb5_0 jupyter_server 1.13.5 pyhd3eb1b0_0 jupyterlab 3.3.2 pyhd3eb1b0_0 jupyterlab_pygments 0.1.2 py_0 jupyterlab_server 2.10.3 pyhd3eb1b0_1 jupyterlab_widgets 1.0.0 pyhd3eb1b0_1 . echo &quot;-Jupyter Version-&quot; jupyter --version jupyter kernelspec list echo &quot;&quot; echo &quot;npm Version&quot; npm -version . -Jupyter Version- Selected Jupyter core packages... IPython : 8.2.0 ipykernel : 6.9.1 ipywidgets : 7.6.5 jupyter_client : 6.1.12 jupyter_core : 4.9.2 jupyter_server : 1.13.5 jupyterlab : 3.3.2 nbclient : 0.5.13 nbconvert : 6.4.4 nbformat : 5.3.0 notebook : 6.4.8 qtconsole : 5.3.0 traitlets : 5.1.1 Available kernels: python389jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6 /Users/boply/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/temp/jupyter/kernels/python389jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6 python3912jvsc74a57bd0b3b7c4b39c51acaa0ababaac78dafb28c940c1acd38600e6898f44bc93745552 /Users/boply/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/temp/jupyter/kernels/python3912jvsc74a57bd0b3b7c4b39c51acaa0ababaac78dafb28c940c1acd38600e6898f44bc93745552 bash /Users/boply/Library/Jupyter/kernels/bash java /Users/boply/Library/Jupyter/kernels/java javascript /Users/boply/Library/Jupyter/kernels/javascript python3 /Users/boply/opt/anaconda3/share/jupyter/kernels/python3 npm Version 6.4.1 .",
-            "url": "https://boply.github.io/fastpages/jupyter/week1/2022/08/28/Program-Info.html",
-            "relUrl": "/jupyter/week1/2022/08/28/Program-Info.html",
+            "url": "https://boply.github.io/fastpages/jupyter/week-1/2022/08/28/Program-Info.html",
+            "relUrl": "/jupyter/week-1/2022/08/28/Program-Info.html",
             "date": " • Aug 28, 2022"
         }
         
@@ -59,8 +59,8 @@
         ,"post5": {
             "title": "Week 1 Primitives",
             "content": "*Links to all fastpages blogs. . Tigran A. (Partner) . Aarav A. . Vunsh M. . Primitive Data Types . Booleans | Numerics (integers, bytes, ect.) | . Non-Primitive Data Types . Strings | Arrays | . College Board and PBL . Each student captures information in fastpages thinking … how they are going to capture information that will grow to 10 college board units … how they will recognize something as PBL vs College Board. . I will watch video from College Board. | I will practice fastpages whenever I have the time. | I will keep key info and code in Jupyter Notebooks. Notes Template |",
-            "url": "https://boply.github.io/fastpages/markdown/week1/2022/08/26/Week-1.html",
-            "relUrl": "/markdown/week1/2022/08/26/Week-1.html",
+            "url": "https://boply.github.io/fastpages/markdown/week-1/2022/08/26/Week-1.html",
+            "relUrl": "/markdown/week-1/2022/08/26/Week-1.html",
             "date": " • Aug 26, 2022"
         }
         
