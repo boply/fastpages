@@ -8,7 +8,7 @@ title: Code.org Key Learning
 
 # Code.org Key Learning
 
-- PainterPlus allows for custom actions and an advanced painter.
+- PainterPlus allows for custom actions and an advanced painter. For example, turnRight instead of three turnLeft's.
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/101087311/188566497-def9634d-d344-4d60-ba00-4a1230d35f68.png">
 
@@ -18,10 +18,9 @@ title: Code.org Key Learning
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/101087311/188566719-07cbeab7-0400-4403-a9fa-9b74c38dd302.png">
 
 
-- Methods allow a creation of custom commands or actions.
+- Methods allow a creation of custom commands or actions. For example, running and painting in a line.
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/101087311/188567460-4a068550-bedb-46b6-a3ac-13983f715451.png">
-
 
 
 - Debug with prints about information.
@@ -30,13 +29,15 @@ title: Code.org Key Learning
 
 ## Extends
 
+Sub-class extends to Super-class.
+
 - Super-class
     - Painter
-    - Parent class
+    - Parent-class
 
 - Sub-class
     - PainterPlus
-    - Child Class
+    - Child-Class
 
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/101087311/188567089-f01f208e-e15d-4d0e-965b-757ab63e3811.png">
