@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "Code.org Key Learning",
-            "content": "Code.org Key Learning . PainterPlus allows for custom actions and an advanced painter. . | While loops allow code to repeat until a condition is no longer met. . | Methods allow a creation of custom commands or actions. . | Debug with prints about information. . | . Extends . Super-class Painter | Parent class | . | Sub-class PainterPlus | Child Class | . | .",
+            "content": "Code.org Key Learning . PainterPlus allows for custom actions and an advanced painter. | . . While loops allow code to repeat until a condition is no longer met. | . . Methods allow a creation of custom commands or actions. | . . Debug with prints about information. | . . Extends . Super-class Painter | Parent class | . | Sub-class PainterPlus | Child Class | . | . .",
             "url": "https://boply.github.io/fastpages/markdown/week-2/2022/09/03/Code-Learning.html",
             "relUrl": "/markdown/week-2/2022/09/03/Code-Learning.html",
             "date": " • Sep 3, 2022"
