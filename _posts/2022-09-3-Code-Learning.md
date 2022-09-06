@@ -39,5 +39,12 @@ Sub-class extends to Super-class.
     - PainterPlus
     - Child-Class
 
+## Objects
+
+- Objects are the myPainter and myPainterPlus references that inherit from the Painter class.
+- Painter is a template class that allows the object to use and create methods which display actions.
+
+Instantiate with: "ClassName objectName = new ClassName();"
+Or: "Painter myPainter = new Painter();"
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/101087311/188567089-f01f208e-e15d-4d0e-965b-757ab63e3811.png">
