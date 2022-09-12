@@ -17,3 +17,5 @@ This website is powered by **[fastpages](https://github.com/fastai/fastpages)** 
     - Gym
     - Computers
 - I'm interested in learning a wide variety of skills which is also why I'm taking this APCSA.
+- I plan on educating myself more on all my classes so I can not only get better grades but also learn more.
+- I'll make sure to manage my mental health and avoid the common trap that students find themselves in.
