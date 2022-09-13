@@ -16,6 +16,17 @@ This website is powered by **[fastpages](https://github.com/fastai/fastpages)** 
     - Video Games
     - Gym
     - Computers
+    - APCSA
+        - Fastpages
+        - AWS
+        - Juypter Notebooks
+        - Instantiating an Object
+        - Java Classes
+        - Java Objects
+        - Bash Commands
+        - If Expressions
+        - While/For loops
+        - Markdown
     
 - I'm interested in learning a wide variety of skills which is also why I'm taking this APCSA.
 - I plan on educating myself more on all my classes so I can not only get better grades but also learn more.
