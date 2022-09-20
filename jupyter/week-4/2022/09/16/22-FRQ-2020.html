@@ -260,17 +260,18 @@ The following table shows some examples of the use of <strong>isValid</strong>.<
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isValid</span><span class="p">(</span><span class="kt">int</span> <span class="n">numWithCheckDigit</span><span class="p">)</span> <span class="p">{</span>
 
-<span class="kt">int</span> <span class="n">lastDigit</span> <span class="o">=</span> <span class="n">numWithCheckDigit</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">numWithCheckDigit</span> <span class="o">/</span> <span class="mi">10</span>
+    <span class="c1">// Takes the remainder of dividing by 10 to get the last digit.</span>
+    <span class="kt">int</span> <span class="n">lastDigit</span> <span class="o">=</span> <span class="n">numWithCheckDigit</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">// Divides by 10 to get all the digits in front of the last one.</span>
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">numWithCheckDigit</span> <span class="o">/</span> <span class="mi">10</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">getCheck</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">==</span> <span class="n">lastDigit</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="kc">true</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">getCheck</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">==</span> <span class="n">lastDigit</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="kc">false</span>
-<span class="p">}</span>
-
-<span class="p">}</span> <span class="c1">// method</span>
 </pre></div>
 
     </div>
