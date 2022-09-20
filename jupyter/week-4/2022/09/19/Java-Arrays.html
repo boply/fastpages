@@ -157,7 +157,9 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">TeddyLoop</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">TeddyLoop</span> <span class="p">{</span>
     <span class="c1">//The area between class definition and the 1st method is where we keep data for object in Java</span>
     <span class="n">String</span> <span class="o">[][]</span> <span class="n">teddys</span><span class="p">;</span>    <span class="c1">//2D Array: AP CSA Unit 8: 2D array of strings</span>
                             <span class="c1">//2D array is like a grid [x][y]</span>
@@ -219,26 +221,27 @@ window.onload = wrap_img;
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"5 distraught Teddy Bears in a Store.\nHow many bought? How many more?"</span><span class="p">);</span>
 
+        <span class="c1">// Random starter array</span>
+        <span class="n">String</span><span class="o">[]</span> <span class="n">arr</span><span class="o">=</span><span class="p">{</span><span class="s">"Don't worry! "</span><span class="p">,</span> <span class="s">"Still "</span><span class="p">,</span> <span class="s">"We have "</span><span class="p">,</span> <span class="s">"Come quick! "</span><span class="p">,</span> <span class="s">"Hurry! "</span><span class="p">,</span> <span class="s">"Just "</span><span class="p">,</span> <span class="s">"Only "</span><span class="p">};</span>
+
         <span class="c1">// teddys (non-primitive) defined in constructor knows its length</span>
         <span class="kt">int</span> <span class="n">teddyCount</span> <span class="o">=</span> <span class="n">teddys</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">teddyCount</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span>  <span class="c1">//loops through 2D array length backwards</span>
         <span class="p">{</span>
+            <span class="c1">// Random Word</span>
+            <span class="n">Random</span> <span class="n">r</span><span class="o">=</span><span class="k">new</span> <span class="n">Random</span><span class="p">();</span>        
+            <span class="kt">int</span> <span class="n">randomWord</span><span class="o">=</span><span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
+
 
             <span class="c1">//this print statement shows current count of teddys</span>
             <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span><span class="c1">//  concatenation (+) of the loop variable and string to form a countdown message</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Oh no! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bear left!"</span><span class="p">);</span>
             <span class="p">}</span>
-            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Just "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Only "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Still "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
+            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"New shipment! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"New shipment arrived! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">randomWord</span><span class="o">]</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="c1">//how many separate parts are there in a teddy teddy?</span>
             <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">teddyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//cycles through "cells" of 2d array</span>
@@ -274,7 +277,6 @@ window.onload = wrap_img;
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>  <span class="p">{</span>
         <span class="k">new</span> <span class="n">TeddyLoop</span><span class="p">().</span><span class="na">printPoem</span><span class="p">();</span>   <span class="c1">//a new teddy list and output in one step</span>
     <span class="p">}</span>
-
 <span class="p">}</span>
 <span class="n">TeddyLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
@@ -292,7 +294,7 @@ window.onload = wrap_img;
 <pre>
 5 distraught Teddy Bears in a Store.
 How many bought? How many more?
-New shipment arrived! 5 Teddy Bears left!
+New shipment! 5 Teddy Bears left!
       ___ 
     {~._.~} 
      ( Y ) 
@@ -341,7 +343,7 @@ Still 4 Teddy Bears left!
      C   C  
      ()_()  
 
-Only 3 Teddy Bears left!
+Just 3 Teddy Bears left!
       ___ 
     {~._.~} 
      ( Y ) 
@@ -358,7 +360,7 @@ Only 3 Teddy Bears left!
      d . b 
      ()_()  
 
-Just 2 Teddy Bears left!
+Come quick! 2 Teddy Bears left!
       ___ 
     {~._.~} 
      ( Y ) 
