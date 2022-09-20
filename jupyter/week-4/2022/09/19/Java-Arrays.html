@@ -166,6 +166,7 @@ window.onload = wrap_img;
     <span class="cm">/**</span>
 <span class="cm">     * Constructor initializes a 2D array of teddys</span>
 <span class="cm">     */</span>
+
     <span class="kd">public</span> <span class="nf">TeddyLoop</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">//Storing Data in 2D arrays</span>
         <span class="n">teddys</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[][]</span><span class="p">{</span>   <span class="c1">//2D array above is just a name, "new" makes a container ("object")</span>
@@ -237,7 +238,7 @@ window.onload = wrap_img;
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Still "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Luckily there's "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"New shipment arrived! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="c1">//how many separate parts are there in a teddy teddy?</span>
             <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">teddyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//cycles through "cells" of 2d array</span>
@@ -291,7 +292,7 @@ window.onload = wrap_img;
 <pre>
 5 distraught Teddy Bears in a Store.
 How many bought? How many more?
-Luckily there's 5 Teddy Bears left!
+New shipment arrived! 5 Teddy Bears left!
       ___ 
     {~._.~} 
      ( Y ) 
