@@ -244,23 +244,23 @@ window.onload = wrap_img;
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">randomWord</span><span class="o">]</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="c1">//how many separate parts are there in a teddy teddy?</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">teddyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//cycles through "cells" of 2d array</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">teddys</span><span class="o">[</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  
+                                                                    
+             
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">teddyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>    
 
-                <span class="cm">/*cycles through columns to print</span>
-<span class="cm">                each teddy part by part, will eventually print entire column*/</span>
-                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">teddys</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                    
+                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">teddys</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">);</span>
 
-                    <span class="c1">// prints specific part of the teddy from the column</span>
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">teddys</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
-
-                    <span class="c1">//this is new line between separate parts</span>
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+                    
+                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"\t"</span><span class="p">);</span>
+                    
                 <span class="p">}</span>
 
-                <span class="c1">//this new line gives separation between stanza of poem</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+            
             <span class="p">}</span>
-
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
             <span class="c1">//countdown for poem, decrementing teddyCount variable by 1</span>
             <span class="n">teddyCount</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
         <span class="p">}</span>
@@ -295,89 +295,34 @@ window.onload = wrap_img;
 5 distraught Teddy Bears in a Store.
 How many bought? How many more?
 New shipment! 5 Teddy Bears left!
-      ___ 
-    {~._.~} 
-     ( Y ) 
-    ()~*~() 
-    (_)-(_) 
+      ___	     ()=()	     ()=()	     ()-()	     ()-()	
+    {~._.~}	     ('Y')	     (':')	     (^;^)	     ('&amp;')	
+     ( Y )	     q . p	     d . b	     C   C 	     c . c	
+    ()~*~()	     ()_() 	     ()_() 	     ()_() 	     ()_()	
 
-     ()=() 
-     ('Y') 
-     q . p 
-     ()_()  
+Just 4 Teddy Bears left!
+      ___	     ()=()	     ()=()	     ()-()	
+    {~._.~}	     ('Y')	     (':')	     (^;^)	
+     ( Y )	     q . p	     d . b	     C   C 	
+    ()~*~()	     ()_() 	     ()_() 	     ()_() 	
 
-     ()=() 
-     (':') 
-     d . b 
-     ()_()  
+Hurry! 3 Teddy Bears left!
+      ___	     ()=()	     ()=()	
+    {~._.~}	     ('Y')	     (':')	
+     ( Y )	     q . p	     d . b	
+    ()~*~()	     ()_() 	     ()_() 	
 
-     ()-() 
-     (^;^) 
-     C   C  
-     ()_()  
-
-     ()-() 
-     ('&amp;') 
-     c . c 
-     ()_() 
-
-Come quick! 4 Teddy Bears left!
-      ___ 
-    {~._.~} 
-     ( Y ) 
-    ()~*~() 
-    (_)-(_) 
-
-     ()=() 
-     ('Y') 
-     q . p 
-     ()_()  
-
-     ()=() 
-     (':') 
-     d . b 
-     ()_()  
-
-     ()-() 
-     (^;^) 
-     C   C  
-     ()_()  
-
-Don't worry! 3 Teddy Bears left!
-      ___ 
-    {~._.~} 
-     ( Y ) 
-    ()~*~() 
-    (_)-(_) 
-
-     ()=() 
-     ('Y') 
-     q . p 
-     ()_()  
-
-     ()=() 
-     (':') 
-     d . b 
-     ()_()  
-
-Still 2 Teddy Bears left!
-      ___ 
-    {~._.~} 
-     ( Y ) 
-    ()~*~() 
-    (_)-(_) 
-
-     ()=() 
-     ('Y') 
-     q . p 
-     ()_()  
+Only 2 Teddy Bears left!
+      ___	     ()=()	
+    {~._.~}	     ('Y')	
+     ( Y )	     q . p	
+    ()~*~()	     ()_() 	
 
 Oh no! 1 Teddy Bear left!
-      ___ 
-    {~._.~} 
-     ( Y ) 
-    ()~*~() 
-    (_)-(_) 
+      ___	
+    {~._.~}	
+     ( Y )	
+    ()~*~()	
 
 All the teddy bears out the door. :(
 ----------------------------------
