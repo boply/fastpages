@@ -235,13 +235,13 @@ window.onload = wrap_img;
 
             <span class="c1">//this print statement shows current count of teddys</span>
             <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span><span class="c1">//  concatenation (+) of the loop variable and string to form a countdown message</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Oh no! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bear left!"</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Oh no! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bear in the store!\n"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"New shipment! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"New shipment! "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears in the store!\n"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">randomWord</span><span class="o">]</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears left!"</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">randomWord</span><span class="o">]</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">" Teddy Bears in the store!\n"</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="c1">//how many separate parts are there in a teddy teddy?</span>
             <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">teddys</span><span class="o">[</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  
@@ -294,31 +294,36 @@ window.onload = wrap_img;
 <pre>
 5 distraught Teddy Bears in a Store.
 How many bought? How many more?
-New shipment! 5 Teddy Bears left!
+New shipment! 5 Teddy Bears in the store!
+
       ___	     ()=()	     ()=()	     ()-()	     ()-()	
     {~._.~}	     ('Y')	     (':')	     (^;^)	     ('&amp;')	
      ( Y )	     q . p	     d . b	     C   C 	     c . c	
     ()~*~()	     ()_() 	     ()_() 	     ()_() 	     ()_()	
 
-Just 4 Teddy Bears left!
+Just 4 Teddy Bears in the store!
+
       ___	     ()=()	     ()=()	     ()-()	
     {~._.~}	     ('Y')	     (':')	     (^;^)	
      ( Y )	     q . p	     d . b	     C   C 	
     ()~*~()	     ()_() 	     ()_() 	     ()_() 	
 
-Hurry! 3 Teddy Bears left!
+Hurry! 3 Teddy Bears in the store!
+
       ___	     ()=()	     ()=()	
     {~._.~}	     ('Y')	     (':')	
      ( Y )	     q . p	     d . b	
     ()~*~()	     ()_() 	     ()_() 	
 
-Only 2 Teddy Bears left!
+Come quick! 2 Teddy Bears in the store!
+
       ___	     ()=()	
     {~._.~}	     ('Y')	
      ( Y )	     q . p	
     ()~*~()	     ()_() 	
 
-Oh no! 1 Teddy Bear left!
+Oh no! 1 Teddy Bear in the store!
+
       ___	
     {~._.~}	
      ( Y )	
