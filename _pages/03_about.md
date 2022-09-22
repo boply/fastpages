@@ -32,3 +32,7 @@ This website is powered by **[fastpages](https://github.com/fastai/fastpages)** 
         - If Expressions
         - While/For loops
         - Markdown
+        - Arrays
+        - ASCII Text
+        - Answering Methods and Control Structures FRQs
+        - Working with a team using Slack, Github and Discord.
