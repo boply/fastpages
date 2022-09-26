@@ -41,24 +41,24 @@ layout: notebook
 	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> 
 	<span class="p">{</span>
 		<span class="c1">// Set it to the number of elements you want in the Fibonacci Series</span>
-		 <span class="kt">int</span> <span class="n">maxNumber</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> 
-		 <span class="kt">int</span> <span class="n">previousNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-		 <span class="kt">int</span> <span class="n">nextNumber</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+		 <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> 
+		 <span class="kt">int</span> <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		 <span class="kt">int</span> <span class="n">x2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 		 
-	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">maxNumber</span><span class="o">+</span><span class="s">&quot; numbers:&quot;</span><span class="p">);</span>
+	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">n</span><span class="o">+</span><span class="s">&quot; numbers:&quot;</span><span class="p">);</span>
  
-	        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">maxNumber</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+	        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
 	        <span class="p">{</span>
-	            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">previousNumber</span><span class="o">+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+	            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
 	            <span class="cm">/* On each iteration, we are assigning second number</span>
 <span class="cm">	             * to the first number and assigning the sum of last two</span>
 <span class="cm">	             * numbers to the second number</span>
 <span class="cm">	             */</span>
  
 	      
-	            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">previousNumber</span> <span class="o">+</span> <span class="n">nextNumber</span><span class="p">;</span>
-	            <span class="n">previousNumber</span> <span class="o">=</span> <span class="n">nextNumber</span><span class="p">;</span>
-	            <span class="n">nextNumber</span> <span class="o">=</span> <span class="n">sum</span><span class="p">;</span>
+	            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">+</span> <span class="n">x2</span><span class="p">;</span>
+	            <span class="n">x1</span> <span class="o">=</span> <span class="n">x2</span><span class="p">;</span>
+	            <span class="n">x2</span> <span class="o">=</span> <span class="n">sum</span><span class="p">;</span>
 	        <span class="p">}</span>
 	<span class="p">}</span>
 <span class="p">}</span>
@@ -102,26 +102,34 @@ layout: notebook
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="c1">// While Loop</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">fibo</span> <span class="p">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> 
-	<span class="p">{</span>
-		 <span class="kt">int</span> <span class="n">maxNumber</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">previousNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">nextNumber</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">maxNumber</span><span class="o">+</span><span class="s">&quot; numbers:&quot;</span><span class="p">);</span>
- 
-	        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-	        <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">maxNumber</span><span class="p">)</span>
-	        <span class="p">{</span>
-	            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">previousNumber</span><span class="o">+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
-	            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">previousNumber</span> <span class="o">+</span> <span class="n">nextNumber</span><span class="p">;</span>
-	            <span class="n">previousNumber</span> <span class="o">=</span> <span class="n">nextNumber</span><span class="p">;</span>
-	            <span class="n">nextNumber</span> <span class="o">=</span> <span class="n">sum</span><span class="p">;</span>
-	            <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-	        <span class="p">}</span>
- 
-	<span class="p">}</span>
- 
+<span class="kd">class</span> <span class="nc">fibo</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Type in amount of numbers for sequence  --&gt;  &quot;</span><span class="p">);</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="p">);</span>
+
+            <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+
+                <span class="kt">int</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">+</span> <span class="n">x1</span><span class="p">;</span>
+                <span class="n">x1</span> <span class="o">=</span> <span class="n">x2</span><span class="p">;</span>
+                <span class="n">x2</span> <span class="o">=</span> <span class="n">x3</span><span class="p">;</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+
+
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>  
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Input must be an integer  &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
 <span class="p">}</span>
-<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -134,7 +142,8 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Fibonacci Series of 25 numbers:0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
+<pre>Type in amount of numbers for sequence  --&gt;  25
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
 </div>
 </div>
 
@@ -168,20 +177,20 @@ layout: notebook
         <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Type in amount of numbers for sequence  --&gt;  &quot;</span><span class="p">);</span>
         <span class="k">try</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+            <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
             <span class="kt">int</span> <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="p">);</span>
 
-            <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-            <span class="k">while</span> <span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
 
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
 
                 <span class="kt">int</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">+</span> <span class="n">x1</span><span class="p">;</span>
                 <span class="n">x1</span> <span class="o">=</span> <span class="n">x2</span><span class="p">;</span>
                 <span class="n">x2</span> <span class="o">=</span> <span class="n">x3</span><span class="p">;</span>
-                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
             <span class="p">}</span>
 
 
