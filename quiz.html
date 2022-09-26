@@ -71,107 +71,107 @@ window.onload = wrap_img;
       <div class="wrapper">
         <ul class="quiz">
   <li>
-      <h4>How many letters are there in "JS"?</h4>
+      <h4>How many bones are in the human body?</h4>
       <ul class="choices">
           <li>
               <label
                   ><input type="radio" name="question0" value="A" /><span
-                      >2</span
+                      >96</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question0" value="B" /><span
-                      >1</span
+                      >193</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question0" value="C" /><span
-                      >3</span
+                      >206</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question0" value="D" /><span
-                      >4</span
+                      >309</span
                   ></label
               >
           </li>
       </ul>
   </li>
   <li>
-      <h4>How many letters are there in "BMX"?</h4>
+      <h4>How many states are there in America?</h4>
       <ul class="choices">
           <li>
               <label
                   ><input type="radio" name="question1" value="A" /><span
-                      >2</span
+                      >48</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question1" value="B" /><span
-                      >1</span
+                      >50</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question1" value="C" /><span
-                      >3</span
+                      >52</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question1" value="D" /><span
-                      >4</span
+                      >60</span
                   ></label
               >
           </li>
       </ul>
   </li>
   <li>
-      <h4>How many letters are there in "A"?</h4>
+      <h4>What year did World War II end?</h4>
       <ul class="choices">
           <li>
               <label
                   ><input type="radio" name="question2" value="A" /><span
-                      >2</span
+                      >1896</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question2" value="B" /><span
-                      >1</span
+                      >1918</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question2" value="C" /><span
-                      >3</span
+                      >1942</span
                   ></label
               >
           </li>
           <li>
               <label
                   ><input type="radio" name="question2" value="D" /><span
-                      >4</span
+                      >1945</span
                   ></label
               >
           </li>
       </ul>
   </li>
 </ul>
-<button class="view-results" onclick="returnScore()">View Results</button>
-<span id="myresults" class="my-results">My results will appear here</span>
+<button class="view-results" onclick="returnScore()">Check</button>
+<span id="myresults" class="my-results">Check for results</span>
 
 <style> 
 html {
@@ -222,7 +222,8 @@ input[type="radio"] {
 </style>
 
 <script>
-var answers = ["A", "C", "B"],
+  // Answer sheet
+var answers = ["C", "B", "D"],
     tot = answers.length;
 function getCheckedValue(radioName) {
     var radios = document.getElementsByName(radioName);
