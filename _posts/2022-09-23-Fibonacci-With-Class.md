@@ -19,6 +19,15 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-Loop">For Loop<a class="anchor-link" href="#For-Loop"> </a></h2><ul>
+<li>Loops sequence (fibonacci math) <strong>FOR</strong> as long as the max number is greater than or equal to the count (i).</li>
+</ul>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -26,108 +35,34 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="cm">/*</span>
-<span class="cm"> * Creator: Nighthawk Coding Society</span>
-<span class="cm"> * Mini Lab Name: Fibonacci sequence, featuring a Stream Algorithm</span>
-<span class="cm"> * </span>
-<span class="cm"> */</span>
-
-<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>  
-<span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.stream.Stream</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
-
-<span class="cm">/* Objective will require changing to abstract class with one or more abstract methods below */</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Fibo</span> <span class="p">{</span>
-    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>  <span class="c1">// name or title of method</span>
-    <span class="kt">int</span> <span class="n">size</span><span class="p">;</span>  <span class="c1">// nth sequence</span>
-    <span class="kt">int</span> <span class="n">hashID</span><span class="p">;</span>  <span class="c1">// counter for hashIDs in hash map</span>
-    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Long</span><span class="o">&gt;</span> <span class="n">list</span><span class="p">;</span>   <span class="c1">// captures current Fibonacci sequence</span>
-    <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">hash</span><span class="p">;</span>  <span class="c1">// captures each sequence leading to final result</span>
-    <span class="n">Scanner</span> <span class="n">input</span><span class="p">;</span>
-    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Zero parameter constructor uses Telescoping technique to allow setting of the required value nth</span>
-<span class="cm">     @param: none</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="nf">Fibo</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">(</span><span class="n">N</span><span class="p">);</span> <span class="c1">// telescope to avoid code duplication, using default as 20</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Construct the nth fibonacci number</span>
-<span class="cm">     @param: nth number, the value is constrained to 92 because of overflow in a long</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="nf">Fibo</span><span class="p">(</span><span class="kt">int</span> <span class="n">nth</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">size</span> <span class="o">=</span> <span class="n">nth</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">hashID</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">hash</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-        <span class="c1">//initialize fibonacci and time mvc</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">init</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     This Method should be &quot;abstract&quot;</span>
-<span class="cm">     Leave method as protected, as it is only authorized to extender of the class</span>
-<span class="cm">     Make new class that extends and defines init()</span>
-<span class="cm">     Inside references within this class would change from this to super</span>
-<span class="cm">     Repeat process using for, while, recursion</span>
-<span class="cm">     */</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Stream&quot;</span><span class="p">;</span>
-        <span class="n">Stream</span><span class="p">.</span><span class="na">iterate</span><span class="p">(</span><span class="k">new</span> <span class="kt">long</span><span class="o">[]</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="n">f</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="kt">long</span><span class="o">[]</span><span class="p">{</span><span class="n">f</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="n">f</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="n">f</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">})</span>
-            <span class="p">.</span><span class="na">limit</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">)</span>
-            <span class="p">.</span><span class="na">forEach</span><span class="p">(</span><span class="n">f</span> <span class="o">-&gt;</span> <span class="k">this</span><span class="p">.</span><span class="na">setData</span><span class="p">(</span><span class="n">f</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">)</span> <span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Number is added to fibonacci sequence, current state of &quot;list&quot; is added to hash for hashID &quot;num&quot;</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setData</span><span class="p">(</span><span class="kt">long</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
-        <span class="n">hash</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">hashID</span><span class="o">++</span><span class="p">,</span> <span class="n">list</span><span class="p">.</span><span class="na">clone</span><span class="p">());</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Custom Getter to return last element in fibonacci sequence</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getNth</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">list</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Custom Getter to return last fibonacci sequence in HashMap</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="n">Object</span> <span class="nf">getNthSeq</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">hash</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">     Console/Terminal supported print method</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Init method = &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;fibonacci Number &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">size</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getNth</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;fibonacci List = &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">list</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;fibonacci Hashmap = &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">hash</span><span class="p">);</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;fibonacci Sequence &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getNthSeq</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="cm">/*</span>
-<span class="cm">    Tester class method.  If this becomes abstract you will not be able to test it directly ...</span>
-<span class="cm">    Change this method to  call &quot;main&quot; class of each of the extended classes</span>
-<span class="cm">     */</span>
-    <span class="kd">static</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Fibo</span> <span class="n">fib</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Fibo</span><span class="p">();</span>
-        <span class="n">fib</span><span class="p">.</span><span class="na">print</span><span class="p">();</span>
-    <span class="p">}</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// For Loop</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">fibo</span> <span class="p">{</span>
+ 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> 
+	<span class="p">{</span>
+		<span class="c1">// Set it to the number of elements you want in the Fibonacci Series</span>
+		 <span class="kt">int</span> <span class="n">maxNumber</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> 
+		 <span class="kt">int</span> <span class="n">previousNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		 <span class="kt">int</span> <span class="n">nextNumber</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+		 
+	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">maxNumber</span><span class="o">+</span><span class="s">&quot; numbers:&quot;</span><span class="p">);</span>
+ 
+	        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">maxNumber</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+	        <span class="p">{</span>
+	            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">previousNumber</span><span class="o">+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+	            <span class="cm">/* On each iteration, we are assigning second number</span>
+<span class="cm">	             * to the first number and assigning the sum of last two</span>
+<span class="cm">	             * numbers to the second number</span>
+<span class="cm">	             */</span>
+ 
+	      
+	            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">previousNumber</span> <span class="o">+</span> <span class="n">nextNumber</span><span class="p">;</span>
+	            <span class="n">previousNumber</span> <span class="o">=</span> <span class="n">nextNumber</span><span class="p">;</span>
+	            <span class="n">nextNumber</span> <span class="o">=</span> <span class="n">sum</span><span class="p">;</span>
+	        <span class="p">}</span>
+	<span class="p">}</span>
 <span class="p">}</span>
-<span class="n">Fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -139,11 +74,8 @@ layout: notebook
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    input</span><span class="ansi-black-intense-fg ansi-bold"> = new Scanner(System.in);</span>
-<span class="ansi-red-intense-fg ansi-bold">&lt;identifier&gt; expected</span>
-</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fibonacci Series of 25 numbers:0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
 </div>
 </div>
 
@@ -153,6 +85,212 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="While-Loop">While Loop<a class="anchor-link" href="#While-Loop"> </a></h2><ul>
+<li>Loops sequence (fibonacci math) <strong>WHILE</strong> the max number is greater than or equal to the count (i).</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// While Loop</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">fibo</span> <span class="p">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> 
+	<span class="p">{</span>
+		 <span class="kt">int</span> <span class="n">maxNumber</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">previousNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">nextNumber</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">maxNumber</span><span class="o">+</span><span class="s">&quot; numbers:&quot;</span><span class="p">);</span>
+ 
+	        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+	        <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">maxNumber</span><span class="p">)</span>
+	        <span class="p">{</span>
+	            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">previousNumber</span><span class="o">+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+	            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">previousNumber</span> <span class="o">+</span> <span class="n">nextNumber</span><span class="p">;</span>
+	            <span class="n">previousNumber</span> <span class="o">=</span> <span class="n">nextNumber</span><span class="p">;</span>
+	            <span class="n">nextNumber</span> <span class="o">=</span> <span class="n">sum</span><span class="p">;</span>
+	            <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+	        <span class="p">}</span>
+ 
+	<span class="p">}</span>
+ 
+<span class="p">}</span>
+<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fibonacci Series of 25 numbers:0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Input">Input<a class="anchor-link" href="#Input"> </a></h2><ul>
+<li>Uses a while loop for takes in the users <strong>INPUT</strong> instead of a pre-registered max number.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Input</span>
+<span class="kd">class</span> <span class="nc">fibo</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Scanner</span> <span class="n">input</span><span class="p">;</span>
+
+        <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Type in amount of numbers for sequence  --&gt;  &quot;</span><span class="p">);</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+            <span class="kt">int</span> <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="p">);</span>
+
+            <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">while</span> <span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">)</span> <span class="p">{</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+
+                <span class="kt">int</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">+</span> <span class="n">x1</span><span class="p">;</span>
+                <span class="n">x1</span> <span class="o">=</span> <span class="n">x2</span><span class="p">;</span>
+                <span class="n">x2</span> <span class="o">=</span> <span class="n">x3</span><span class="p">;</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+
+
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>  
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Input must be an integer  &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Type in amount of numbers for sequence  --&gt;  25
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Recursion">Recursion<a class="anchor-link" href="#Recursion"> </a></h2><ul>
+<li>Recalls itself (<strong>RECURSES</strong>) (fibonacci math) for as long as the max number is greater than the count (i).</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Recursion</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">fibo</span><span class="p">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">fibonacciRecursion</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">){</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+			<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="k">return</span> <span class="n">fibonacciRecursion</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacciRecursion</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">maxNumber</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
+	<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Fibonacci Series of &quot;</span><span class="o">+</span><span class="n">maxNumber</span><span class="o">+</span><span class="s">&quot; numbers: &quot;</span><span class="p">);</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">maxNumber</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+			<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">fibonacciRecursion</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">fibo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fibonacci Series of 25 numbers: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Results">Results<a class="anchor-link" href="#Results"> </a></h2><p>Runtimes:</p>
+<ul>
+<li>For Loop: 0.2 seconds.</li>
+<li>While Loop: 0.2 seconds.</li>
+<li>Input: dependent on user input but disregarding that it's 0.2 seconds.</li>
+<li>Recursion: 1.2 seconds.</li>
+</ul>
+<p>Difference between For Loop and While Loop:</p>
+<ul>
+<li>For Loop is used for repeating a sequence a pre-determined number of times.</li>
+<li>While Loop is used for repeating a sequence until a condition is no longer met.</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 
