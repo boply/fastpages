@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      9 min read
     
 </span></p>
 
@@ -236,7 +236,7 @@ window.onload = wrap_img;
         <span class="n">Image</span> <span class="n">resizedImg</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>  
 
         <span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">*</span> <span class="p">(</span><span class="n">scale</span><span class="o">/</span><span class="mf">100.0</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
-        <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">scale</span><span class="o">/</span><span class="mf">250.0</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">*</span> <span class="p">(</span><span class="n">scale</span><span class="o">/</span><span class="mf">275.0</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
 
         <span class="k">try</span> <span class="p">{</span>
             <span class="c1">// read an image to BufferedImage for processing</span>
@@ -307,19 +307,185 @@ window.onload = wrap_img;
         <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">" "</span><span class="p">;</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">240</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">" "</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">210</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">238</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"`"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">236</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"."</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">190</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">"*"</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">170</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">"+"</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">234</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"'"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">232</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"-"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">230</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">","</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">229</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">":"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">228</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"\""</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">227</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"~"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">226</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"^"</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">110</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">225</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">";"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">224</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"!"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">223</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"_"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">221</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"*"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">220</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"/"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">219</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"("</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">218</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"r"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">217</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">")"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">216</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"|"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">215</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"+"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">214</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"&gt;"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">213</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"&lt;"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">212</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"]"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">211</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"["</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">210</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"l"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">209</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"L"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">208</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"Y"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">207</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"j"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">206</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"="</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">205</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"c"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">204</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"7"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">203</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"1"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">201</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"i"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"T"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">199</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"J"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">198</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"t"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">197</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"}"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">196</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"n"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">195</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"f"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">194</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"x"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">193</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"{"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">192</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"u"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">191</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"C"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">190</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"s"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">189</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"I"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">188</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"z"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">187</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"y"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">186</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"V"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">185</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"F"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">184</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"h"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">183</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"o"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">181</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"w"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">180</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"k"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">179</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"%"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">178</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"U"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">177</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"4"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">176</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"X"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">175</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"3"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">174</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"S"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">172</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"P"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">170</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"K"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">168</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"e"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">166</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"Z"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">164</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"G"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">162</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"2"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">160</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"H"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">158</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"A"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">156</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"5"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">154</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"a"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">152</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"O"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">150</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"m"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">148</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"p"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">146</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"b"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">144</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"D"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">142</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"$"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">140</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"d"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">138</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"0"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">136</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"E"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">134</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"q"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">132</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"Q"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">130</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"R"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">128</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"9"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">126</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"&amp;"</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">124</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"6"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">122</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"N"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"M"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">118</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"g"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">116</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"8"</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">114</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"W"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">112</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">"B"</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">110</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"#"</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">"@"</span><span class="p">;</span>
@@ -356,9 +522,9 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Original: 499298 389x413  images/MonaLisa.png
-Scaled: 22691 128x55  images/tmp/MonaLisa.png
+Scaled: 20622 128x50  images/tmp/MonaLisa.png
 Original: 39392 302x265  images/pumpkin.png
-Scaled: 5305 100x35  images/tmp/pumpkin.png
+Scaled: 4976 100x32  images/tmp/pumpkin.png
 </pre>
 </div>
 </div>
@@ -409,96 +575,88 @@ Scaled: 5305 100x35  images/tmp/pumpkin.png
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>.......*.....*.......*^&amp;8#8#8#8888^888&amp;^&amp;^^^^^^^^^+++^^^^^^^^^^^&amp;&amp;&amp;8&amp;888#####8#8###########@@@@@####@@@@@@@@@@@@@@@@@@@@@@@@@8^+
-*.*..............*..+^&amp;888888888&amp;^^^^^^^++******+*+*.**+++++++^+^^^^^^^^&amp;&amp;88888#8##############@@#@#@@@@@@@@@@@@@@@@@@@@@#@@@@@8
-...................^&amp;8888888^^^^++*+******....*.*.****.**+*++++*+^+^+^^^^^^&amp;&amp;8888888########@@#@##@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@
-................**^888#888^^^^++++*****.*.***....*.....*.**.+*+*+^^^^^+^^^^^^&amp;8888#8888#####@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-.............*.*+&amp;88888&amp;^^^^^^^+++...............*..........*..****+***++^^^^^^^&amp;8888888########@#@#@@@@@@@@@@@@@@#@@@@@@@@@@@@@
-............***^8888888&amp;^^++++**.......... ........ ...........*****.**+++^^^^^^^&amp;8&amp;88888#########@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-...........**+^88###88^^^++***.............. ..................**.*******++^^^^^^^^8^88888#######@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-...........*+&amp;#####88^^^++***......................................*******++++^^^^^&amp;&amp;8888888#######@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-.........**^8#####88^^^^^++*..............*......*..................*.****++++^^^^&amp;8&amp;&amp;88888&amp;###8###@@#@@@@@@@@@@@@@@@@@@@@@@@@@@
-.........+^^8#####8&amp;^^^+++++........................................*******+++^^^^^^^&amp;8888888888######@#@@@@@@#@@@@@@@@@@@@@@@@@
-.......+^^^^8####@88^^^^++***..........*..*...**.*.. ...*........******+++^+^^^^^^^^^^&amp;88&amp;8888888#####@@##@@@@@@@@@@@@@@@@@@@@@@
-.....*^^^^^&amp;8@#@##88&amp;^^+++****......*.....***.*..*.....*.........*****+^++^+++^^^^^^^^&amp;^^&amp;&amp;8888888#8####@@@@@@@@@@@@@@@@@@@@@@@@
-....^^^^^888####88&amp;&amp;^^^+*+*.**....*.*.....*....*................***+*+*++*+^^+++^^^^^^^^^^^&amp;^&amp;^&amp;88888#@@#@@@@@@@@@@@@@@@@@@@@@@@
-..+^^^^88#888#8##8^^^^^^+****.*.....*.....*....................*.*.****+++++^++++^^^+^^^^^^^^^^^&amp;^&amp;&amp;88##@@@@@@@@@@@@@@@#@@@@@@@@
-.^^^^^8888#88##8#8^^^^^+***.......*..*................ ........*.*****.**+**+*+++++^+^^^^^^^^^^^^^&amp;&amp;8###@@@@@@@#@@@@@@@@@@@@@@@@
-*^^^^88#8888#####&amp;^^++^++*********+..*.*.....................*.*.**********+****++++++++++^^^^^^^^^&amp;88#####@@@@#@@@@@@@@@@@@@@@@
-^+^^^8888888#88#88^^^^+**....*.*.*...*...*..*.................*****.*..*********++++++**+^+^+^^^^^^&amp;88#8####@#@@@@@@#@#@@@@@#@@@
-^^^^^#888888888##&amp;^^^+++**......****.*.....................***+++++++*+**++*****++++++^+^^^^^^^^^^&amp;&amp;88###@@#@##@#@@#@@@@@@@@@@@@
-^^^^^&amp;#8##88##88#&amp;^^+*****.************.*.*...*........**+++^^^^^^+^^++++++++++++^+^+^^+^^^^^^^^^&amp;&amp;&amp;88###@@@@@#####@@@#@@@@@@##@
-^^^^^&amp;88####888888^^++****+**++^+^^^^^^+**....+.*...***+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&amp;^^&amp;&amp;888888###@@@#@#@##@#@####@@@@##
-^^^^888##8#888888&amp;^^^^^^^^^^^^^&amp;^&amp;^^^^^^^++*********+++^^^^&amp;&amp;&amp;8&amp;&amp;&amp;&amp;&amp;&amp;^^^^^^^&amp;&amp;&amp;888888&amp;8888888&amp;88&amp;&amp;888888##@@##@#@#@@@@##@#@#@#@@
-^^^^8&amp;&amp;88888888888^^^^^^&amp;&amp;^^^^++*++++^^^^^^+*******++^^^^&amp;&amp;888&amp;&amp;^^^++++++^^^^^^^&amp;8888888888888&amp;&amp;&amp;&amp;&amp;88888####@#@#######@#@@@#@@@@
-^^^8^&amp;888888&amp;88888^^&amp;8^8^^^^^^&amp;8&amp;8888^^^^^^^++*****++^^&amp;^^88^^^^^^^^^&amp;888#8888888&amp;888&amp;888888&amp;^^^^^^^&amp;8888###@@@###8#####@###@@@@
-^^&amp;888888888888888^^^^^&amp;^&amp;^^++^&amp;888888&amp;&amp;&amp;^^^^+*.*.*++^^&amp;^^8^^^^^^+****^88888&amp;88&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;^^^^^^++^^^^^&amp;8888##@############@@#@@#@
-^^&amp;88#88888##8888&amp;^^++^^^++****+^^^^^^^^+^*+++....*++^^^^^^^^+++**.*+**+^^^^^^^^^^^^^++++*++*+*+^^^^^^8888###@#@#@###@8@@@#@@##@
-&amp;^888##8#####8#88^^^+++^+********+^^^^^^+^+++*....*+^^^^^^^^^^+++++*+++++++^+^^^^^^^^++++*+**+*++^^^^&amp;88####@@#@#@#@#@##@@#@@@@@
-^^8888#88###@8#8#^++*++***++*+^^^^^^^+++******.*..*++^^^^^^^^^++*++++++^^^^^^^^^^+***********+++^^^^&amp;888###@@#@#@##@@#####@#@@@@
-^^88#8##8@##@#@##^^++.****......*+*****.*****++.***+^^^^^^^^++*****.****..*......*..*****++++++^^^^^&amp;888#@@@@@@@#@#@@8@#@#@#@@#@
-^^^8#@######@#8##^^++**+*........*.*..*****+**+..***^++++^++++***....*..............****+++++^^^^^^^8888#@@@@@@@@##@#@@##@##@@@#
-8^&amp;&amp;#@#@#@@#@#@##&amp;^+++++***.**...*.....*.*....*..**+*++++++++++.*....*..*..........***+++++^^^^^^^&amp;&amp;888##@@@@@@@@@@#@@#@#@##@#@#
-^^&amp;88#8##8@##@@@#8^^^+*+***....*.......**.........*+*++^*++*+****.*..........*...*..*+++++^^^^^^^&amp;8888##@#@@#@###@@#@8@###@#@#@#
-^888##8###@#######&amp;^^++*....*.......*.*.*.........**+++++^+*+**...*.*..*.*...*.*.****+++^^^^^^^^^&amp;&amp;88##@@@@@@@@@#@#8@#@8##@8##@8
-#888##8#####88##@#8^^+***.......*.*...*.*..*.....*****+^+^++*******.**.*.....***.****+++^^^^^^^&amp;&amp;&amp;88###@#@@@@@@@#@@#@@#@#####@##
-#888##8#####@@8@@#8&amp;^++**..***........*+**..*...*.*++^++^^^^++**.******..*..*******++++^+^^^^^^&amp;&amp;888###@@@@##@#@#@#@#@#@@8##@@##
-8##8#@#8#####@@#@##8^^+++***......*****+**.*.....**+*++++^+^^+*..*..****...********++^^^^^^^^&amp;^8888##@@@@@@@#@#@#@@8@@#8@8#@@@##
-8##8##8####@@@###@88^^^^+***....******+++**.....**+++^^^^^^^^^+...*..*.*...***++++++^^^^^^^^&amp;^^8888######@@@@@@#@#8@@@@#@@####@#
-@8@#8####@#@@@8##@##8^^^^++************^^^+****+^^^&amp;8&amp;8&amp;&amp;&amp;&amp;&amp;&amp;8^*..*..*.*******+++++^^^^^^^^^&amp;^88&amp;8####@@@@##@@#@#@@##@########@#
-88##8##@###@##8@#@@@88^^^^++***+*********+^^^^^^&amp;8^888888888&amp;^^**.....*****+*++++^^^^^^^^^&amp;^888888#####@@@@@@@@@@@#@@@######@#@@
-@##@8@@#@@#8###@##@@#8&amp;&amp;^^^+++++++*****....*+^^88888#88888&amp;&amp;^^^+****+*++++++++++^^^^^^^^^^^^&amp;8&amp;&amp;88#####@#@@@@@@@@#@@#@#@###@@@@#
-##8#8@#@@#@#@###8@###88^^^^^^^+^++++**.*.....*+^^^^^&amp;&amp;^^^^^++++++++++++^^++++++++^^^^^^^^^^^^&amp;&amp;8888##@@@@#@@@@@#@@@#@@#######@@8
-8#8##########8###8@###8^^^^+^++^^+++++****...**+^^^^^^^^^^^^^^+^^^^^^^^^^+++++++^+^^^^^^^^^^^&amp;^&amp;888###@@@@@@@@@@@@@#@@@#@8#@@#@#
-##8@8####8#888#@@8@####8^^^^^++++^^^^^^^+^++++++++^^^^^^^^^^^^^^^&amp;8^^^^^++++++*++^^^^^^^^^&amp;8^8&amp;888####@@@@@@@@@@##@#@#@###@##@@@
-###8888######8#@##88#@@88^^^^++++++^^^^^^^^^^^^^^^^^^^^&amp;^^8&amp;&amp;8&amp;&amp;&amp;^^^^^^+**++*++++^^^^^^^^&amp;^&amp;^8&amp;888##@8#@@@@@@@@@@#@@@@####@@@##@
-8#88##8####@@###8@8@8#@#88^^^+++*+*+**....*******++*++^^^^^^^^^^^++++++++***++++^^^^^^^^&amp;&amp;&amp;&amp;^&amp;8888###@#@@@@@#@##@@@#@##@#@#####@
-&amp;88#8#8#####@@#@@#8@#@@#@#8&amp;^^^+++++**....*+*++++++++^^^^^^^^^^^^^+^^++++++++^+^^^^^^^^&amp;8888&amp;8888####@@@@@@#@@#@@@@#@#@@@####@@@
-88888#888##@#@#####@##@#####8&amp;^^^^++++*******+^^^^^^^^^^^^^^^^^^^^^^^^^++^+++^^^^^^^&amp;&amp;&amp;8&amp;88888#8###8##@@@@@@@@#@#@##@#@@#@@@@@#@
-888888#####@@#@###@##8@#@#@@##8^^^^^^^++*+**.+++++^^^^^^^^^^++^^^^^^^^^^^^^^^^^^^&amp;&amp;&amp;8888888888#8##@#@@@#@@@#@##@@#@8@##@##@@@@@@
-88888##8###@####@#@@#88@##@@@###88&amp;^^^++****..........****+++++^^^^^^^^^^^^^^^^^&amp;&amp;888888888888#8##@@@@@@@@@@@@@@@#@@@#@@@@@#@@@@
-^8&amp;8888#8@#####8#@###@##@##8@##@#@#88^^^+**............***++++^^^^^^^^^^^^^^&amp;^&amp;&amp;8888888888#8888##@@@@@@#@@##@@@#@#@@#@###@@@@#@@
-&amp;88888#88#@##########@###@@#@@###@####8&amp;^++**.........**+++^+^++^^^^^^^^^&amp;&amp;&amp;88888888888888888#8@####@@@#@@@#@#@@@##@@@#@@#@@@@#@
-^888#8#8###8###8#######8#@#@@@8@#@@@####8&amp;^^++********+++++++^^^^^^^^&amp;&amp;8888888888888888#888#######@@@@#@##@@@@@@@@@@@@@@@@##@#@@
-88#8#888###8###@####@8#@@@@##@#@@@@@####8#8&amp;^^^^+*^^+^^^^^^^^^^^^&amp;8888888888888888888####8##@8#@##@#@@@@@@@@@@@@@@@@@@@@#@@@@@8@
-8888##8#8##@#@##@#@@###@@@@@@@#@@@@@@@#@###888&amp;&amp;^^^^^&amp;^^^&amp;&amp;&amp;88888^&amp;88888888888888888#####8#@#8#@#8####@#@@@@@@@@@@@@#@@@@@#@@8@@
-888#888#8#######@@@@#@#@##@@@@@@##@@@##8###8##888#^888888&amp;88888888888888888888#8#8###########88#8###8###@#@@#@#@@@@@#@@@#@###@@#
-88888####8###@##@@@8#@###@@@@@@@@@@#@#@@@@####8@8@8#88#8#8##8888#88888#8##88####88@#######8###88#8#8###########@@@@@@@@@@@@@@@8@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###@@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######@@@@@####8888888888888888888888#@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######@@@@@####888888888888888888888888888#@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######8#@@@@@@#8888888888888888888888888888888888#@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@########@@@@@@@#888888888888888888888888888888888888#@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@########@@@@@@@@###8888888888888888888888888888888888888@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@########@@@@@########88888888888888&amp;88888888888888888888888@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@#########################888888&amp;&amp;^^^^^^+++^^^8###@@@@@@@8888888#@@@@@@@@@
-@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@########888^^^^8888#@@@@@@@@@@@@@@@@@@@88888888@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#########888^ ^@@@@@@@@@@@@@@@@@@@@@@@@@@88888888@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@##@@@@##@@@@@@@@@@@@@##########8+ ^@@@@@@@@@@@@@@@@@@@@@@@@@@88888888#@@@@@@
-@@@@@@@@@@@@@@@@@@@@######################@@@##########8^+@@@@@@@@@@@@@@@@@@@@@@@@@@@888888888#@@@@@
-@@@@@@@@@@@@@@@@##@@####8#################@@@@@#@@@@@@@8&amp;8@@@@@@@@@@@@@@@@@@@@@@@@@@8888888888##@@@@
-@@@@@@@@@@@@@@@@@@##@@#88888888888888##@@@@@@@@@@@###@@@88##@@@@@@@@@@@@@@@@@@@@@#888888888888##@@@@
-@@@@@@@@@@@@@@@@@@@@###@@@###8888888#@@@@@@@@@@########@@#####@@@@@@@@@@@@@@@##8888888888888888#@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@##########@@#######@@@@@@@#######88888#########8#@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8888########@#####################################@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#^^888########@@###@@##############################@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#####################@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####@@@@@@@@@@@@@@@
+<pre>)*]||&gt;&lt;Y/r_*[l/&lt;([*&gt;l}aB@@@@@@@@@@6@@@B&amp;89dDmmAGm2zK42HKOODN0R9QNNM#8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@EP
+=[c&gt;/r*r*;/(&lt;rr(*L)]Pg@@@@@@@@@M6QOAHKSKoscnxc7iCtC}&gt;ixIwyzPFwKkHeAH55aDM8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+&gt;*(___:*;!_!*!!)+jYQ@@@@@@@g$pGZkC}ni[cL[=L&lt;[[7rjlYt7x&gt;y7V}zVy3I4HZZ25Gm$b$8g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+_!(;~^:;|**)/]|jfKg@@@@@@&amp;pAeOZGZ4}{itc&lt;c*7(;"!l-7^,/)|L*7Y)sjfn}44Z44kHHmm9qW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+~"*:,:"!|!;*lj1ub@@@@@@8RD5O2Pu}ji,!.r.+-^`),"!^/&lt;*.~`|^(l/*L|+i}t}x=nsVoSZ5dDR6N@@W@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+!~!-~~_;^^&gt;&lt;}uGM@@@@@@MdOZ%Fx}jr;Y-.')`*^* r |-::&lt;"`,,( (~")"+&gt;TY&gt;7j7isshhP2OAbQNM#@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+"^^*^**!;*+ikp@@@@@@@MDHS%zui=(-.]-.`**;(^'r:|.;^/ !:|,;~-~-^_*|lj]JC1tnnCVPK2ADE&amp;&amp;8M@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+,'^:,;*!*17K8@@@@@@@WR$5e4hf=])',/:",_'_''1*'];;,&lt;,-|-!*~;;,;*;)^(|)i[1Lixyo4PApd6W#W#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+,,,!,"!!|FEB@@@@@@@#9mAGKwsf|/!:;";,-/!-- Y!'*_|-&gt;.~,-*.),!"|*[/**[]7jLJ}us33KapmRE8N8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--,,*~^wH5pd@@@@@@@@&amp;EHGwoxxtl/_",-~**'7~:i*&gt;!=t,L'*`']'l;)"&lt;*^r;YiL1Y1hCF2P2H2HD$qER9W@@W@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:-'-*IOA5bR@@@@@@@@@8QaPzIuJiT(*-/l!c*_&lt;(&lt;ji=(1l-i~('!rL*l/+&lt;(*[lLn{fysKSoGKSKH2aaqEQ&amp;MN68W@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+~**t0embg@@@@@@@@@86RDePnuilL](^,_[lT*&gt;~]~7/r)(Y)*[/,(^"~_;**_+|c7=IJVxXFV4ZGk%XHmAAp0EQEQRMN89g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:[2G$GR@@@@@@@@@@@&amp;EppaHyxi==_j*(!=,=*)(&lt;;&lt;_l,(&lt;&lt;|[l^|-::]))!|"=(t[utnxyFPy3ey%SPeaAK25bmm$DEqQ0N&amp;8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
++pab50@@@@@@@@@@@@MDHGeKwTfYLtL+7Lu/*T,[/&gt;^_[!;/*:~]^l _~|-+;|*f&lt;iYt1TY}}%xhxCsoPzskk34KZZAAmappQ&amp;WB@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+wZ2Om@@@@@@@@@@@@@QpGS3{wYl)Yt[T+7I+)i&lt;]/l,^l*!|^_!;!]"!(L!L"j&gt;n&lt;li+L&lt;L]iiTJ7{fxw4w4VyIFUe3ZKm2mbq9B@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+mK2b0@@@@@@@@@@@@8EE2SU{xY|+Lr&lt;L&lt;l/]]||_+r&lt;~1*|*:)*^r*+"*+![==nifxx}CttJJ}x}f{ifF3%wo4PIUGZG2O5d$RNW@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2mmbd@@@@@@@@@@@@6$HAszxT7*]jjiYT}nu7iL|Trlr++Y^r/*^_:/|1ftzU3eZOG3Pe4kVykzVhVsVIwk3XPGXaAbbpbpRR6BW@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+A$ERqB@@@@@@@@@@@@q5Phxxtifn{VS%kSeUZkwVijll&gt;]C+[r**Llik2Oa5Edq0EQDDbmAGOpOaDHOOa$5d50dE9096&amp;NR8g#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+dEQ9@#@@@@@@@@@@@WQD5ZXZ3ZeH20b90N9Rq00meU{cn1tLiTTJwu4H$Q&amp;N8B#BgNMWWQ90Q&amp;MgB#@@#WB@#W@@@@@@@g#B#W@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Qbq9@BW@@@@@@@@@@@Ng&amp;6QNgg0mH5ZSz%KeZD$qdQOki}{nin{yoKaQ9#8@@@@86$5VPoSk422ab0DR@@@@@@@@@@@@@@W#WBB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+MQ6@Mg@@@@@@8@@@@@69B@6@Q0DE0RN@B@@@@MNdm$bmkVj7i1Jw3DE896@@96dpaOpqq&amp;@@@@@@@@@#@#@@@#@@@@@@8R9bdQ998@@@@@@@@@@@@@@@@@@@@@@@@@@@
+R0g@@@@@@@@@@@@@@@0pbQ6&amp;6M$GowK9@@@@@@@BgdSmH%&lt;(7riF%EN8&amp;9@EA$maZwintxa@#@@@N@@WMM98ggNQbpAAHSUUZApQ&amp;W@@@@@@@@@@@@@@@@@@@@@@@@@@
+0M#@@@@@@@@@@@@@@85Xh{K2G{FtL=1T%A25aOaK43uPws"!*rLVPaDdEDDbZ3%Fi1[Tyt}VK22OAGe3eH2mHS4FwFwCnFz%ZH$EQN@@@@@@@@@@@@@@@@@@@@@@@@@@
+6&amp;@@@@@@@@@@@@@@@&amp;G5XUSXwnFFxIw%SH$d0pZPFXsIfj/++(=hHpbRDDb0pZh3S4hw%kowXSSK3ApAOmHSSPUhtJCiizs3KH$0N@@@@@@@@@@@@@@@@@@@@@@@@@@@
+D6@@@@@@@@@@@@@@@92wC}s}ti1JJCVIPHPKkFzn7T{7sV}=ij1hGDDdObmpPPIx1zIuIo%wUI%%khwtJ77iJi11txItwwU2Gm$N8@@@@@@@@@@@@@@@@@@@@@@@@@@@
+&amp;d8@@@@@@@@@@@@@@65hoi|uL[)+!)*^)nL=&lt;)iLl}i}Jwz(&gt;cnuG4GGeHGazwf7l)L_)i/&lt;^"(|('|Y*&gt;&lt;&lt;LY1}ohww4eAHaE96B@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@$g@@@@@@@@@@@@@@#aXUsJy[rj*Ll*=*7]l|l+L+ili(+T+_CxFwFXP4eUXkwz[=l|*/7*!Y:,*:^Y&lt;*)&gt;[1TCzh%XSZ2mOD9NW@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+9QM#@@@@@@@@@@@@@@0Ze3Cwfn}]Y]:&lt;,Y^;^*|=]7[&lt;_(+-*LtyxwV3hUhxhCn[7/++&gt;)=(l^;;r7&gt;|&gt;7[=iuhoS3K225bD68@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Q@@@@@@@@@@@@@@@@@8OeyIuL[r)7_~&lt;*)/*Yl1(J""_(,^'&lt;/cu4XkP4G4IInf+]l=)i!_T/Y,;(JrY]L]j}wkSeGHpm$D9RB#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@$Zoncc*&lt;r]_*(clLr[)L|c]&lt;=_[**^jfisfKe3GkonuiYl=x&gt;c7]T&lt;;*![=LY[llJ}IwSZ2A$0QQ8W8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@W0ewic&lt;r1l=&gt;rr*()]Ljz17(&lt;l&lt;(&gt;c/sCsKPKZ5GH3znx]{1YTjt[|7)|Yt7fL1fzwUkGepaRg&amp;6WB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@95P%wtcc*(!/)YLLi7J4{ilY_~/&lt;+=CVIUX3SPXG53t+[TL[7jjt((|1=cxTsnuhUHGapD0QRg6@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@MdmAPC=1]&gt;|&gt;ciiYinze3sL;|/+*TJ%e5pbOAOab0qe&gt;)*1|+7&gt;i)LcYtihVw4oPGHmDD$9RW9g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@WQbmPk{iTJnutC=TTf4D$mVsnzKbQ&amp;@@@@@@@@@@@mJ=/]*(]YLiitsCzIoU4K25bOd0RM8@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@96pHZohoyoIs}}cLLl&gt;&gt;iKq9q6@@B@@@@@@@@@N0HVTYj&lt;i1uniyIyzkoSZ2Gab0b06&amp;WQW@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@9NmHHGeU43XsC7jL&lt;&gt;*&gt;r&lt;s2N#@@@@@#NM9$a5PUCu{fxwUk%X%US4wXPKZH5$E0ddEMq8@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@9E5H2GGS2ekUoyxicL+&gt;)|}oGapOmD$D5OaGKPSUKKeZP55AOGXXUkFo4ee5H$d$REM6N9g6B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@8Qm2eKXwZKPeZmpZPC%ffxCxhhXZGmDDbpbpppdbqQ&amp;MRda5ZXyFok3CkSZZmOO$qq&amp;8g&amp;#B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@EaHZX%osPKADRQEEbRpRmppmddRN&amp;MBMN#gB@##@#Nd2eZXhIVzs%kwP2Z5apqQ&amp;8M@M@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@ROewwFsFfFzul[^li=ii=cyKZV3eH5HObbpmOAe3%UPe%osuC}zkUUZ5HDpER9#WM868@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@#0HG3Pkyhtn|r)LizfFo%PeKSeHaAa5bpb$AeZGPGe%UXywUw42S5Amm00NNg@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@qbOGPPV%t}=z7xu4KO0Q9qEmDEqbaapAmOO25GaAZeKZ3PeOObpqR988@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B6D5HK%ziV1i|J}{hk3PweKXK33SXUZ5Gaa2HmHG2AOaapRqRBBB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+N@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Q5ZU}tLl(**(;/&gt;)r(lc7fz%xhKZ2A5GZ5O2OOm0&amp;RRgB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@MbSon[];/![_//**&gt;[Ju4UKXG4A55AOab009RMWW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Mmaz}iLTLll&lt;&lt;cTtkoUeSGKAam0$q&amp;NB#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@RDHSSh}ok%XeZPHHmOmb0NW8B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#M60$EE0Q9qQN8MMW@@@MB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@##88888888888888888##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#########
-@@@@@@@@@@@@@@@@@@@@@@##########888888888##############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#############
-@@@@@@@@@@@@@@@@@@@@@@#####@@@@@@@@@####@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###############
-@@@@@@@@@@@@@@@@@@@@@@@@###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##################
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#####################
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##########################
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###############################
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#################@@@@@@###############################################
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#Wg6Q$pa2ePGmQ@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@RZEg@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Z m@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@4 8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@dD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@QN@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 </pre>
 </div>
 </div>
