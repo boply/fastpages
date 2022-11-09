@@ -6,8 +6,6 @@ categories: [markdown,week-11]
 title: Night at the Museum
 ---
 
-# Night at the Museum
-
 ## [Frontend Repo](https://github.com/the-dark-way/quizme)
 
 ## [Backend Repo](https://github.com/vunsh/the-dark-side)
