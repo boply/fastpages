@@ -36,3 +36,11 @@ This website is powered by **[fastpages](https://github.com/fastai/fastpages)** 
         - ASCII Text
         - Answering Methods and Control Structures FRQs
         - Working with a team using Slack, Github and Discord.
+        - Array Lists
+        - Image Arrays with ASCII
+        - AP Exam and Collegeboard expectations.
+        - MCQ Tests and reflections
+        - Fetching
+        - Backend with databases
+        - API's
+        - CSS styling and connecting frontend backend to projects.
