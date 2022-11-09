@@ -4,8 +4,8 @@
         "post0": {
             "title": "2014 MCQ Test Corrections",
             "content": "Generate random index for ArrayList | b. (int) (Math.random() * myList.size()) . This answer can&#39;t be A which is the one I chose because it ends with a -1. This doesn&#39;t work in this context as it starts with index 0 rather than 1 which I made the mistake of assuming. I will improve on this in the future because I now know that the array.size starts at index 0. . Print odd integers in 1D array but not even | a. for (int x : arr) if (x % 2 != 0) System.out.println(x); . Can&#39;t be C because you don&#39;t want to print the end result of the array index but instead print the number that is even. A is correct since it prints x instead of arr[x]. I will make sure to not have this problem arise in the future by paying more attention to the wording of the question. . Mystery Method with Int Parameter | d. 8 . This is the correct answer over c because I simply did my arithmetic wrong. It&#39;s not really a matter of not understanding the material but rather my desire to finish the question in a timely manner. In order to prevent mistakes like this from happening on easy problems is to take my time which was also the problem for the last question. . Print values divisible by 4 using for loop | e. for (int k = 4; k &lt;= 100; k = k + 4) System.out.println(k); . This is the correct answer over B because I need to set the K value to 4 at the start of the for loop rather than 1 which was in the answer I chose. This is because rather than the starting lines of code it doesn&#39;t increment by 1 but rather 4. Therefore, k must start at 4. I can solve this issue in the future by again taking more time and thinking about the answer logically before choosing something. (I think there&#39;s a running theme with just small mistakes.) .",
-            "url": "https://boply.github.io/fastpages/jupyter/week-7/2022/11/08/TestCorrections.html",
-            "relUrl": "/jupyter/week-7/2022/11/08/TestCorrections.html",
+            "url": "https://boply.github.io/fastpages/jupyter/week-11/2022/11/08/TestCorrections.html",
+            "relUrl": "/jupyter/week-11/2022/11/08/TestCorrections.html",
             "date": " • Nov 8, 2022"
         }
         
@@ -14,9 +14,9 @@
     
         ,"post1": {
             "title": "Night at the Museum",
-            "content": "Frontend Repo . Backend Repo . API Controller . Team Issue . - Pojo - Fetch - Database . Home . Help . Flashcards . Quiz . Login .",
-            "url": "https://boply.github.io/fastpages/jupyter/week-11/2022/11/08/NightAtMuseum.html",
-            "relUrl": "/jupyter/week-11/2022/11/08/NightAtMuseum.html",
+            "content": "Night at the Museum . Frontend Repo . Backend Repo . API Controller . Team Issue . - Pojo - Fetch - Database . Home . Help . Flashcards . Quiz . Login .",
+            "url": "https://boply.github.io/fastpages/markdown/week-11/2022/11/08/22-NightMuseum.html",
+            "relUrl": "/markdown/week-11/2022/11/08/22-NightMuseum.html",
             "date": " • Nov 8, 2022"
         }
         
